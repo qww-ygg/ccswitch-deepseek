@@ -1,4 +1,4 @@
-﻿# ccswitch-deepseek
+# ccswitch-deepseek
 
 [English](README_EN.md)
 
@@ -10,23 +10,42 @@ Codex 使用 OpenAI Responses API 协议，DeepSeek 只提供 Chat Completions A
 
 ## 快速开始
 
-安装依赖：
+### 1. 安装 Node.js
+
+本项目需要 Node.js 环境。请访问 [Node.js 官网](https://nodejs.org/) 下载并安装最新 LTS 版本。
+
+安装完成后，在命令行中验证：
+
+（在这个项目文件夹中点击右键出现菜单打开命令行）
+
+![在终端中打开](./image.png)
+
+```bash
+node --version
+npm --version
+```
+
+### 2. 安装依赖
 
 ```bash
 npm install
 ```
 
-编辑 `.env`：
+### 3. 配置 API Key
+
+复制 `env_example` 后命名为 `.env` 并编辑：
 
 ```
 api_key=sk-your-deepseek-api-key
 ```
 
-启动：
+### 4. 启动服务
 
 ```bash
 npm start
 ```
+
+服务启动后，运行 Codex CLI 即可自动通过本代理连接 DeepSeek。
 
 ## 文件结构
 
